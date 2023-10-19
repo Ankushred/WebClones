@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: white;
+}
+.page-1{
+    height: 110vh;
+    width: 100%;
+    background-color: rgb(94, 85, 85);
+    overflow: hidden;
+}
+.nav{
+    height: 55px;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2.4px;
+    position: fixed;
+    top: 0;
+    transition: all 1s;
+}
+.nav:hover{
+    background-color: white;
+    color: black;
+}
+.nav:hover a{
+    color: black;
+}
+.nav-left{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left>div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+.nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.nav-right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-right>div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+#search{
+    font-size: 12px;
+}
+.page-1 img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+.message-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    opacity: 0;
+    scale: 0.95;
+    bottom: -10px;
+}
+.message-content>div{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.message-content>div h2{
+    font-size: 21px;
+    letter-spacing: 4.2px;
+    font-weight: 700;
+    color: white;
+}
+.message-content>div h3{
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: white;
+}
+.message-content>div a{
+    color: rgb(0, 0, 0);
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 13px 25px 13px 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 900;
+}
+.message-content>div div{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.btn{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn button{
+    padding: 4px;
+    margin-right:1vw; 
+    border: 2px white solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#btn{
+    height: 10px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: -10.1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn button{
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.page-2{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+.page-2>div{
+    height: 48%;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+}
+.page-2>div .items{
+    height: 100%;
+    width: 100%;
+    transition: all 6s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+#items1{
+    background-image: url("https://www.tailfeather.com.au/cdn/shop/files/Wallets-Collection_d5317155-076f-47d3-91a8-d3cb7c2dba53_750x960_crop_center.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#items2{
+    background-image: url("https://www.tailfeather.com.au/cdn/shop/files/Bags-Collection-2_750x960_crop_center.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#items3{
+    background-image: url("https://www.tailfeather.com.au/cdn/shop/files/Belts-Collection_5d77084a-9110-40d3-9142-c78cb1a09013_750x960_crop_center.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#items4{
+    background-image: url("https://www.tailfeather.com.au/cdn/shop/files/Device-Collection_750x960_crop_center.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#items5{
+    background-image: url("https://www.tailfeather.com.au/cdn/shop/files/Canvas-Collection_97b6ae5b-9ea1-4f18-b3e0-0f32c3e949a5_750x960_crop_center.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#items6{
+    background-image: url("https://www.tailfeather.com.au/cdn/shop/files/Accessories-Collection_750x960_crop_center.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.page-2>div:hover .items,
+.page-2>div:focus .items{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.collection{
+    height: 25%;
+    width: 60%;
+    z-index: 9;
+    position: absolute; 
+    bottom: 12%;
+    left: 10%;
+}
+.collection>div{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.collection>div h2{
+    font-size: 21px;
+    letter-spacing: 4.2px;
+    font-weight: 700;
+    color: white;
+}
+.collection>div h3{
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: white;
+}
+.collection>div a{
+    color: rgb(0, 0, 0);
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 13px 25px 13px 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 900;
+}
+.collection>div div{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.page-3{
+    height: 110vh;
+    width: 100%;
+    background-color: rgb(94, 85, 85);
+    overflow: hidden;
+    position: relative;
+    margin-top: 3vh;
+}
+.page-3 img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+.message-content1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    opacity: 0;
+    scale: 0.95;
+    bottom: -10px;
+}
+.message-content1>div{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.message-content1>div h2{
+    font-size: 21px;
+    letter-spacing: 4.2px;
+    font-weight: 700;
+    color: white;
+}
+.message-content1>div h3{
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: white;
+}
+.message-content1>div a{
+    color: rgb(0, 0, 0);
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 13px 25px 13px 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 900;
+}
+.message-content1>div div{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.btn1{
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 3vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn1 button{
+    padding: 4px;
+    margin-right:1vw; 
+    border: 3px white solid;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+}
+.page-4{
+    height: 60vh;
+    width: 100%;
+    color: #1C1B1B;
+    margin-top: 5vh;
+}
+.page-4 .footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.footer .box1{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+}
+.box1 h6{
+    position: absolute;
+    bottom: 50px;
+}
+.box1 h3{
+    line-height: 40px;
+    font-size: 13px;
+}
+.box1 h3 span{
+    font-weight: 900;
+    padding: 3px;
+    font-size: 12px
+}
+.box1>div{
+    height: 10%;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+}
+.box1>div a{
+    color: black;
+    opacity: 0.8;
+    font-size: 15px;
+}
+.footer .box2{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.box2 h3{
+    line-height: 40px;
+    font-size: 13px;
+}
+.box2 h3 span{
+    font-weight: 900;
+    padding: 3px;
+    font-size: 12px
+}
+.footer .box3{
+    height: 100%;
+    width: 20%;
+    margin-top: 50px;
+    padding-top: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.box3 h3{
+    line-height: 40px;
+    font-size: 13px;
+}
+.box3 h3 span{
+    font-weight: 900;
+    padding: 3px;
+    font-size: 12px
+}
+.box3>div a{
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 10px;
+    padding: 10px 15px;
+    background-color: black;
+    margin-top: 50px;
+    width: 30%;
+    font-weight: 900;
+}
+.box3>div input{
+    border: 1px solid rgb(193, 193, 193);
+    padding: 10px 20px;
+    width: 60%;
+}
+.box3>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
